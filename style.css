@@ -494,88 +494,6 @@ textarea.form-control { min-height: 120px; }
     transform: translateY(0);
 }
 
-
-/* --- 7. Media Queries (Responsividade) --- */
-
-@media (max-width: 992px) {
-    .about-content, .contact-wrapper, .agri-hub-content, .mission-vision .mv-container {
-        flex-direction: column;
-    }
-}
-
-@media (max-width: 768px) {
-    .mobile-menu-button {
-        display: block;
-    }
-
-    nav {
-        position: fixed; top: 0; left: -100%; width: 80%;
-        height: 100vh; background-color: white;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transition: left 0.3s ease-in-out;
-        padding-top: 80px;
-    }
-    
-    nav.nav-active {
-        left: 0;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-    }
-
-    nav ul li {
-        margin: 15px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    nav ul li a {
-        color: var(--dark);
-        font-size: 1.2rem;
-    }
-    
-    .mobile-menu-close {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 2rem;
-        color: var(--dark);
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .hero-content {
-        text-align: center;
-        max-width: 100%;
-        padding: 0 10px;
-    }
-
-    .hero-content h1 { font-size: 2.5rem; }
-    .hero-content p { font-size: 1.1rem; }
-    .page-header h1 { font-size: 2.5rem; }
-}
-
-@media (max-width: 576px) {
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-    .btn {
-        display: block;
-        width: 90%;
-        margin: 10px auto;
-    }
-     .btn-outline {
-        margin-left: auto;
-    }
-}
-
-/* Adicione este código ao seu style.css */
-
 /* --- Estilos para os Cartões de Destaque na Homepage (CORREÇÃO) --- */
 .mv-container {
     display: flex; /* Alinha os cartões lado a lado */
@@ -778,24 +696,7 @@ header.scrolled .lang-link:hover {
     border: 3px solid white; /* Borda branca para destacar */
 }
 
-/* Ajuste de responsividade para os mapas */
-@media (max-width: 992px) {
-    .locations-home-content {
-        flex-direction: column-reverse; /* Coloca os mapas em cima do texto em mobile */
-    }
-}
-@media (max-width: 576px) {
-    .locations-home-maps-container {
-        flex-direction: column; /* Coloca um mapa em cima do outro em ecrãs muito pequenos */
-    }
-}
 
-/* Ajustes de responsividade para novas secções */
-@media (max-width: 992px) {
-    .agri-hub-home-content, .locations-home-content {
-        flex-direction: column;
-    }
-}
 
 /* ADICIONE ESTE NOVO CÓDIGO PARA O LOGO COMBINADO */
 
@@ -836,4 +737,118 @@ header.scrolled .logo-container img {
 /* Altera a cor do texto do logo para verde quando o fundo do header for branco */
 header.scrolled .logo-text {
     color: var(--primary);
+}
+
+/* =============================================== */
+/* --- 7. Media Queries (Responsividade) --- */
+/* =============================================== */
+
+/* Para ecrãs de tablets e menores (até 992px) */
+@media (max-width: 992px) {
+    .about-content, 
+    .contact-wrapper, 
+    .agri-hub-content, 
+    .mission-vision .mv-container,
+    .agri-hub-home-content {
+        flex-direction: column;
+    }
+
+    .locations-home-content {
+        flex-direction: column-reverse; /* Coloca os mapas em cima do texto */
+    }
+}
+
+
+/* Para ecrãs de telemóveis (até 768px) */
+@media (max-width: 768px) {
+    /* Mostra o botão do menu e garante que o seletor de língua fique visível */
+    .header-controls {
+        display: flex;
+        align-items: center;
+        gap: 15px; /* Espaço entre o seletor de língua e o botão do menu */
+    }
+
+    .mobile-menu-button {
+        display: block; /* Mostra o botão hamburguer */
+    }
+
+    /* Esconde a navegação de desktop */
+    header nav {
+        display: none;
+    }
+    
+    /* Regras para quando o menu mobile está ATIVO (a abrir) */
+    nav.nav-active {
+        display: block;
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 80%;
+        height: 100vh; 
+        background-color: white;
+        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
+        transition: left 0.3s ease-in-out;
+        padding-top: 80px;
+        z-index: 2000; /* Garante que o menu fica por cima de tudo */
+    }
+    
+    nav.nav-active ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav.nav-active ul li {
+        margin: 15px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav.nav-active ul li a {
+        color: var(--dark);
+        font-size: 1.2rem;
+    }
+    
+    .mobile-menu-close {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 2rem;
+        color: var(--dark);
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Ajustes gerais de layout para mobile */
+    .hero-content {
+        text-align: center;
+        max-width: 100%;
+        padding: 0 10px;
+    }
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content p { font-size: 1.1rem; }
+    .page-header h1 { font-size: 2.5rem; }
+}
+
+
+/* Para ecrãs de telemóveis muito pequenos (até 576px) */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .btn {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+    }
+     .btn-outline {
+        margin-left: auto;
+    }
+
+    .locations-home-maps-container {
+        flex-direction: column; /* Coloca um mapa em cima do outro */
+    }
 }
