@@ -192,7 +192,7 @@ const translations = {
     contact_form_name: "Your Name", contact_form_email: "Your Email", contact_form_message: "Your Message",
     contact_map_title: "Our Location",
   },
-  CN: {
+  cn: {
     // 导航和页脚
     nav_home: "首页", nav_about: "关于我们", nav_services: "服务项目", nav_team: "团队", nav_contact: "联系方式",
     footer_about_title: "关于 MGI", footer_about_text: "一家于2024年成立的莫桑比克公司，旨在改变该国的农业部门。",
