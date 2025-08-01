@@ -263,6 +263,12 @@ header.scrolled .lang-link:hover {
 }
 
 /* --- Menu Mobile --- */
+.header-controls {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
 .mobile-menu-button {
     display: none;
     font-size: 1.8rem;
@@ -1039,6 +1045,15 @@ footer {
 
     .mobile-menu-button {
         display: block;
+        order: 2; /* Coloca o botão depois do seletor de língua */
+    }
+
+    /* Seletor de língua no mobile */
+    .language-switcher {
+        order: 1;
+        border-left: none;
+        padding-left: 0;
+        margin-left: 0;
     }
 
     /* Navegação Mobile */
@@ -1051,43 +1066,91 @@ footer {
         position: fixed; 
         top: 0; 
         left: 0; 
-        width: 80%;
+        width: 85%;
+        max-width: 300px;
         height: 100vh; 
         background-color: white;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.1);
-        transition: left 0.3s ease-in-out;
+        box-shadow: 2px 0 15px rgba(0,0,0,0.2);
+        transition: transform 0.3s ease-in-out;
         padding-top: 80px;
         z-index: 2000;
+        overflow-y: auto;
     }
     
     nav.nav-active ul {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         width: 100%;
+        padding: 0 20px;
     }
 
     nav.nav-active ul li {
-        margin: 15px 0;
+        margin: 0;
         width: 100%;
-        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    nav.nav-active ul li:last-child {
+        border-bottom: none;
     }
 
     nav.nav-active ul li a {
         color: var(--dark);
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        display: block;
+        padding: 15px 0;
+        width: 100%;
+        text-align: left;
+        border-radius: 0;
+    }
+
+    nav.nav-active ul li a:hover {
+        color: var(--secondary);
+        background-color: rgba(248, 165, 27, 0.1);
+        padding-left: 10px;
     }
     
     .mobile-menu-close {
         display: block;
         position: absolute;
-        top: 20px;
-        right: 20px;
-        font-size: 2rem;
+        top: 25px;
+        right: 25px;
+        font-size: 1.8rem;
         color: var(--dark);
         background: none;
         border: none;
         cursor: pointer;
+        z-index: 2001;
+    }
+
+    /* Overlay para fechar o menu */
+    .mobile-menu-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1999;
+    }
+
+    .mobile-menu-overlay.active {
+        display: block;
+    }
+
+    /* Ajustes do logo no mobile */
+    .logo-container img {
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+
+    header.scrolled .logo-container img {
+        height: 35px;
     }
 
     /* Ajustes Hero */
@@ -1107,6 +1170,15 @@ footer {
     
     .page-header h1 {
         font-size: 2.5rem;
+    }
+
+    /* Ajustes de seção para mobile */
+    section {
+        padding: 60px 0;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
     }
 }
 
