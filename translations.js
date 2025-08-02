@@ -31,25 +31,6 @@ const translations = {
     home_feature2_p: "Nossos projetos são desenhados para gerar crescimento económico enquanto protegem o meio ambiente e fortalecem as comunidades locais.",
     home_feature3_title: "Parcerias Estratégicas",
     home_feature3_p: "Acreditamos no poder da colaboração. Trabalhamos com parceiros locais e internacionais para alcançar resultados extraordinários.",
-    home_intervention_title: "Modelo de Intervenção",
-    home_intervention1_title: "Atuação Estratégica",
-    home_intervention1_p: "Atuação nos Corredores Logísticos, Zonas Económicas Especiais (ZEE), Zonas Francas Industriais (ZFI), e Parques Industriais (PI).",
-    home_intervention2_title: "Agregação de Valor",
-    home_intervention2_p: "Transformação dos Produtos Agrícolas através do agroprocessamento, industrialização, conservação e embalagem.",
-    home_intervention3_title: "Organização de Mercados",
-    home_intervention3_p: "Estruturação com padronização de produtos, certificação e observação das exigências dos mercados de consumo.",
-    home_intervention4_title: "Medidas de Salvaguarda",
-    home_intervention4_p: "Adopção de quotas de mercado, sobretaxas e preços de referência para incentivar a produção e exportação.",
-    home_agrihub_title: "O Modelo de Agri-Hub",
-    home_agrihub_p: "É um centro de serviços agrícolas onde os produtores têm acesso a meios de produção, serviços e informações, garantindo um agronegócio rentável, inclusivo e responsável.",
-    home_agrihub_linkages_title: "Ligações a montante e jusante",
-    home_agrihub_linkages_p: "As ligações com os mercados chineses permitem a garantia de escoamento para os produtores, agregando mais valor aos produtos.",
-    home_locations_title: "Locais Prioritários de Atuação",
-    home_locations_p: "A curto prazo, os recursos serão concentrados nas cadeias de valor agrícola prioritárias relacionadas às zonas agroecológicas (ZAE) associadas a infraestruturas logísticas e corredores industriais.",
-    home_locations_l1: "Dondo - Sofala",
-    home_locations_l2: "Mocuba - Zambézia",
-    home_locations_l3: "Nacala - Nampula",
-    home_locations_l4: "Guijá / Chokwé - Gaza",
 
     // PÁGINA: SOBRE NÓS
     about_header_title: "Sobre a MGI",
@@ -89,7 +70,7 @@ const translations = {
     services_loc1_title: "Dondo - Sofala", services_loc1_p: "Corredor industrial da Beira com infraestruturas logísticas estratégicas.",
     services_loc2_title: "Mocuba - Zambézia", services_loc2_p: "Zona agroecológica com grande potencial para produção agrícola diversificada.",
     services_loc3_title: "Nacala - Nampula", services_loc3_p: "Corredor de Nacala com acesso privilegiado a mercados regionais e internacionais.",
-    services_loc4_title: "Guija / Chokwé - Gaza", services_loc4_p: "Áreas com tradição agrícola e potencial para irrigação e agroprocessamento.",
+    services_loc4_title: "Guija / Chokwê - Gaza", services_loc4_p: "Áreas com tradição agrícola e potencial para irrigação e agroprocessamento.",
 
     // PÁGINA: EQUIPA
     team_header_title: "Nossa Equipa",
@@ -112,7 +93,8 @@ const translations = {
     contact_form_name: "Seu Nome",
     contact_form_email: "Seu Email",
     contact_form_message: "Sua Mensagem",
-    contact_map_title: "Nossa Localização",
+    contact_yping_title: "Contactos do Y Ping Chow", // <-- ADICIONE ESTA LINHA
+    contact_yping_whatsapp: "WhatsApp",
   },
   en: {
     // NAVIGATION & FOOTER
@@ -125,20 +107,13 @@ const translations = {
     btn_learn_more: "Learn More", btn_contact_us: "Contact Us", btn_send_message: "Send Message",
 
     // PAGE: INDEX (HOME)
-    home_hero_title: "Transforming the Agricultural Sector in Mozambique", home_hero_p: "We promote rural development through agricultural production, marketing, and agro-processing for a more prosperous and sustainable future.",
-    home_welcome_title: "Welcome to MGI", home_welcome_p: "MGI is a leading Mozambican company dedicated to catalyzing the transformation of the agro-industrial sector. We focus on implementing infrastructure, modernizing production, and building bridges to global markets, always with a focus on sustainability and economic inclusion.",
+    home_hero_title: "Transforming the Agricultural Sector in Mozambique",
+    home_hero_p: "We promote rural development through agricultural production, marketing, and agro-processing for a more prosperous and sustainable future.",
+    home_welcome_title: "Welcome to MGI",
+    home_welcome_p: "MGI is a leading Mozambican company dedicated to catalyzing the transformation of the agro-industrial sector. We focus on implementing infrastructure, modernizing production, and building bridges to global markets, always with a focus on sustainability and economic inclusion.",
     home_feature1_title: "Innovation and Technology", home_feature1_p: "We use cutting-edge technology to optimize the entire value chain, from seed to final consumer.",
     home_feature2_title: "Sustainable Impact", home_feature2_p: "Our projects are designed to generate economic growth while protecting the environment and strengthening local communities.",
     home_feature3_title: "Strategic Partnerships", home_feature3_p: "We believe in the power of collaboration. We work with local and international partners to achieve extraordinary results.",
-    home_intervention_title: "Intervention Model",
-    home_intervention1_title: "Strategic Operation", home_intervention1_p: "Operating in Logistic Corridors, Special Economic Zones (SEZ), Industrial Free Zones (IFZ), and Industrial Parks (IP).",
-    home_intervention2_title: "Value Aggregation", home_intervention2_p: "Transformation of Agricultural Products through agro-processing, industrialization, conservation, and packaging.",
-    home_intervention3_title: "Market Organization", home_intervention3_p: "Structuring with product standardization, certification, and observation of consumer market requirements.",
-    home_intervention4_title: "Safeguard Measures", home_intervention4_p: "Adoption of market quotas, surcharges, and reference prices to encourage production and exportation.",
-    home_agrihub_title: "The Agri-Hub Model", home_agrihub_p: "It is an agricultural service center where producers have access to production means, services, and information, ensuring a profitable, inclusive, and responsible agribusiness.",
-    home_agrihub_linkages_title: "Upstream and Downstream Linkages", home_agrihub_linkages_p: "Connections with Chinese markets ensure product flow for producers, adding more value to the products.",
-    home_locations_title: "Priority Areas of Operation", home_locations_p: "In the short term, resources will be concentrated in priority agricultural value chains related to agro-ecological zones (AEZ) associated with logistics infrastructure and industrial corridors.",
-    home_locations_l1: "Dondo - Sofala", home_locations_l2: "Mocuba - Zambézia", home_locations_l3: "Nacala - Nampula", home_locations_l4: "Guijá / Chokwé - Gaza",
 
     // PAGE: ABOUT US
     about_header_title: "About MGI", about_header_p: "Learn about our identity, purpose, and the values that guide us.",
@@ -173,7 +148,7 @@ const translations = {
     services_loc1_title: "Dondo - Sofala", services_loc1_p: "Beira industrial corridor with strategic logistics infrastructure.",
     services_loc2_title: "Mocuba - Zambézia", services_loc2_p: "Agro-ecological zone with great potential for diversified agricultural production.",
     services_loc3_title: "Nacala - Nampula", services_loc3_p: "Nacala corridor with privileged access to regional and international markets.",
-    services_loc4_title: "Guija / Chokwé - Gaza", services_loc4_p: "Areas with agricultural tradition and potential for irrigation and agro-processing.",
+    services_loc4_title: "Guija / Chokwê - Gaza", services_loc4_p: "Areas with agricultural tradition and potential for irrigation and agro-processing.",
 
     // PAGE: TEAM
     team_header_title: "Our Team", team_header_p: "Experienced and dedicated professionals, ready to boost your business.",
@@ -190,7 +165,8 @@ const translations = {
     contact_address_title: "Address", contact_phone_title: "Phones", contact_email_title: "Email",
     contact_form_title: "Send us a Message",
     contact_form_name: "Your Name", contact_form_email: "Your Email", contact_form_message: "Your Message",
-    contact_map_title: "Our Location",
+    contact_yping_title: "Y Ping Chow's Contacts", // <-- ADICIONE ESTA LINHA
+    contact_yping_whatsapp: "WhatsApp",
   },
   中文: {
     // 导航和页脚
@@ -203,20 +179,13 @@ const translations = {
     btn_learn_more: "了解更多", btn_contact_us: "联系我们", btn_send_message: "发送消息",
 
     // 页面: 首页
-    home_hero_title: "改变莫桑比克的农业部门", home_hero_p: "我们通过农业生产、营销和农产品加工促进农村发展，共创更繁荣、更可持续的未来。",
-    home_welcome_title: "欢迎来到 MGI", home_welcome_p: "MGI 是一家领先的莫桑比克公司，致力于推动农工业部门的转型。我们专注于实施基础设施、现代化生产，并搭建通往全球市场的桥梁，始终注重可持续性和经济包容性。",
+    home_hero_title: "改变莫桑比克的农业部门",
+    home_hero_p: "我们通过农业生产、营销和农产品加工促进农村发展，共创更繁荣、更可持续的未来。",
+    home_welcome_title: "欢迎来到 MGI",
+    home_welcome_p: "MGI 是一家领先的莫桑比克公司，致力于推动农工业部门的转型。我们专注于实施基础设施、现代化生产，并搭建通往全球市场的桥梁，始终注重可持续性和经济包容性。",
     home_feature1_title: "创新与技术", home_feature1_p: "我们利用尖端技术优化从种子到最终消费者的整个价值链。",
     home_feature2_title: "可持续影响", home_feature2_p: "我们的项目旨在创造经济增长，同时保护环境并赋能当地社区。",
     home_feature3_title: "战略伙伴关系", home_feature3_p: "我们相信合作的力量。我们与本地和国际合作伙伴共同努力，以取得卓越的成果。",
-    home_intervention_title: "干预模式",
-    home_intervention1_title: "战略运营", home_intervention1_p: "在物流走廊、经济特区（SEZ）、工业自由区（IFZ）和工业园区（IP）运营。",
-    home_intervention2_title: "价值聚合", home_intervention2_p: "通过农产品加工、工业化、保鲜和包装来改造农产品。",
-    home_intervention3_title: "市场组织", home_intervention3_p: "通过产品标准化、认证和遵守消费市场要求进行结构调整。",
-    home_intervention4_title: "保障措施", home_intervention4_p: "采取市场配额、附加费和参考价格等措施，以鼓励生产和出口。",
-    home_agrihub_title: "农业中心模式", home_agrihub_p: "这是一个农业服务中心，生产者可以在此获得生产资料、服务和信息，确保一个盈利、包容和负责任的农业综合企业。",
-    home_agrihub_linkages_title: "上下游联系", home_agrihub_linkages_p: "与中国市场的联系确保了生产者的产品销路，为产品增加了更多价值。",
-    home_locations_title: "重点运营区域", home_locations_p: "短期内，资源将集中于与农业生态区（AEZ）相关的优先农业价值链，这些区域与物流基础设施和工业走廊相连。",
-    home_locations_l1: "栋多 - 索法拉", home_locations_l2: "莫库巴 - 赞比西", home_locations_l3: "纳卡拉 - 楠普拉", home_locations_l4: "吉雅 / 绍奎 - 加扎",
     
     // 页面: 关于我们
     about_header_title: "关于 MGI", about_header_p: "了解我们的身份、宗旨以及指导我们的价值观。",
@@ -268,6 +237,7 @@ const translations = {
     contact_address_title: "地址", contact_phone_title: "电话", contact_email_title: "电子邮件",
     contact_form_title: "给我们留言",
     contact_form_name: "您的姓名", contact_form_email: "您的电子邮件", contact_form_message: "您的留言",
-    contact_map_title: "我们的位置",
+    contact_yping_title: "Y Ping Chow先生的联系方式", // <-- ADICIONE ESTA LINHA
+    contact_yping_whatsapp: "WhatsApp",
   }
 };
